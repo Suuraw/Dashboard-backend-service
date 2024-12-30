@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import authRoutes from "./routes/authRoutes.js";
-import crudRoute from "./routes/crudRoute.js";
+import authRoutes from "/opt/render/project/src/routes/authRoutes.js";
+import crudRoute from "/opt/render/project/src/routes/crudRoute.js";
 import env from "dotenv";
 env.config();
 const app = express();
@@ -15,3 +15,4 @@ app.use("/api",crudRoute);
 app.listen(port, () => {
   console.log(`The server is running on port ${port}`);
 });
+
