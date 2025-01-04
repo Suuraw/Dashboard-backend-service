@@ -15,6 +15,3 @@ app.use("/api",crudRoute);
 app.listen(port, () => {
   console.log(`The server is running on port ${port}`);
 });
-import fs from "fs";
-console.log(fs.existsSync("./kaduRoute/authRoutes.js"));
-console.log(fs.existsSync("./routes/crudRoute.js"));
