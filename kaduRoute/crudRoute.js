@@ -1,4 +1,4 @@
-import {getWeek1Data,addWeek1Data,getWeek2Data,addWeek2Data,getWeek3Data,addWeek3Data,getWeek4Data,addWeek4Data,getWeek5Data,addWeek5Data,getCapstoneData,addCapstoneData,getAssessmentData,addAssessmentData,deleteCapstoneData,deleteAssessmentData} from "../controller/weekDataController.js";
+import {getWeek1Data,addWeek1Data,getWeek2Data,addWeek2Data,getWeek3Data,addWeek3Data,getWeek4Data,addWeek4Data,getWeek5Data,addWeek5Data,getCapstoneData,addCapstoneData,getAssessmentData,addAssessmentData,deleteCapstoneData,deleteAssessmentData} from "../controllerLogic/weekDataController.js";
 import express from "express";
 const router=express.Router();
 // week 1 routes

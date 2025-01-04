@@ -25,8 +25,6 @@ export const addWeek1Data = async (req, res) => {
     const collection = db.collection("Week 1");
 
     const weekData = req.body;
-    // return res.status(400).json({ message: "Invalid data format" });
-  
     await collection.deleteMany({});
     const result = await collection.insertOne({ weekData });
     if (result.acknowledged) {
@@ -292,7 +290,6 @@ export const deleteCapstoneData = async (req, res) => {
     if (!ObjectId.isValid(id)) {
       return res.status(400).json({ message: "Invalid ID format" });
     }
-
     await client.connect();
     const db = client.db("Courses");
     const collection = db.collection("Capstone Project");
