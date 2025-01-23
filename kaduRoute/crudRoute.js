@@ -1,5 +1,6 @@
 import {getWeek1Data,addWeek1Data,getWeek2Data,addWeek2Data,getWeek3Data,addWeek3Data,getWeek4Data,addWeek4Data,getWeek5Data,addWeek5Data,getCapstoneData,addCapstoneData,getAssessmentData,addAssessmentData,deleteCapstoneData,deleteAssessmentData} from "../controllerLogic/weekDataController.js";
 import express from "express";
+import { fetchLeadboard } from "../controllerLogic/leadboardData.js";
 const router=express.Router();
 // week 1 routes
 router.get("/week1Data",getWeek1Data);
@@ -25,5 +26,5 @@ router.get("/assessmentData",getAssessmentData);
 router.post("/assessment",addAssessmentData);
 router.delete("/deleteAssessmentData/:id",deleteAssessmentData);
 
-
+router.get("/leadboardData",fetchLeadboard);
 export default router;
